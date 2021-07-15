@@ -1,0 +1,8 @@
+{
+	"ModalPage": true,
+	"ModalPageFullscreen": true,
+	"NavigationType": "Cross",
+	"OuterNavigation": true,
+	"PageToOpen": "/nw/Pages/Order_Details/Order_Details_List.page",
+	"_Type": "Action.Type.Navigation"
+}

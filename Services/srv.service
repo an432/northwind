@@ -1,0 +1,9 @@
+{
+    "DestinationName": "north.wind",
+    "OfflineEnabled": false,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
+}

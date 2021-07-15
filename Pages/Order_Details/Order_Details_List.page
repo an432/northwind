@@ -1,0 +1,51 @@
+{
+	"Caption": "Order_Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{ProductID}",
+						"DetailImageIsCircular": false,
+						"Footnote": "{Quantity}",
+						"OnPress": "/nw/Actions/Order_Details/NavToOrder_Details_Detail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Discount}",
+						"Subhead": "{UnitPrice}",
+						"Title": "{OrderID}"
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"Enabled": true,
+						"MinimumCharacterThreshold": 3,
+						"Placeholder": "Item Search"
+					},
+					"Target": {
+						"EntitySet": "Order_Details",
+						"QueryOptions": "$filter=OrderID eq {OrderID}",
+						"Service": "/nw/Services/srv.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Order_Details_List",
+	"_Type": "Page"
+}

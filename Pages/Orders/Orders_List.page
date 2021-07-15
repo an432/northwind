@@ -1,0 +1,53 @@
+{
+	"Caption": "Заказы",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "{CustomerID}",
+						"DetailImage": "/nw/Rules/choosePic.rule.js",
+						"DetailImageIsCircular": false,
+						"Footnote": "{OrderDate}",
+						"OnPress": "/nw/Actions/Orders/NavToOrders_Detail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{RequiredDate}",
+						"Subhead": "{EmployeeID}",
+						"SubstatusText": "{ShippedDate}",
+						"Title": "{OrderID}"
+					},
+					"Search": {
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"Enabled": true,
+						"MinimumCharacterThreshold": 3,
+						"Placeholder": "Item Search"
+					},
+					"Target": {
+						"EntitySet": "Orders",
+						"QueryOptions": "",
+						"Service": "/nw/Services/srv.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Orders_List",
+	"_Type": "Page"
+}

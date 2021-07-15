@@ -1,0 +1,110 @@
+{
+	"Caption": "Orders Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{CustomerID}",
+						"Footnote": "{OrderDate}",
+						"HeadlineText": "{OrderID}",
+						"StatusText": "{RequiredDate}",
+						"Subhead": "{EmployeeID}",
+						"SubstatusText": "{ShippedDate}",
+						"Tags": [
+						]
+					},
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Номер заказа",
+							"Value": "{OrderID}"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
+						},
+						{
+							"KeyName": "Сторудник",
+							"Value": "{EmployeeID}"
+						},
+						{
+							"KeyName": "Дата заказа",
+							"Value": "{OrderDate}"
+						},
+						{
+							"KeyName": "Дата поставки",
+							"Value": "{RequiredDate}"
+						},
+						{
+							"KeyName": "ShippedDate",
+							"Value": "{ShippedDate}"
+						},
+						{
+							"KeyName": "ShipVia",
+							"Value": "{ShipVia}"
+						},
+						{
+							"KeyName": "Freight",
+							"Value": "{Freight}"
+						},
+						{
+							"KeyName": "ShipName",
+							"Value": "{ShipName}"
+						},
+						{
+							"KeyName": "ShipAddress",
+							"Value": "{ShipAddress}"
+						},
+						{
+							"KeyName": "ShipCity",
+							"Value": "{ShipCity}"
+						},
+						{
+							"KeyName": "ShipRegion",
+							"Value": "{ShipRegion}"
+						},
+						{
+							"KeyName": "ShipPostalCode",
+							"Value": "{ShipPostalCode}"
+						},
+						{
+							"KeyName": "ShipCountry",
+							"Value": "{ShipCountry}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Позиции заказа",
+				"Clickable": true,
+				"Enabled": true,
+				"ItemType": "Button",
+				"OnPress": "/nw/Actions/navToOrderItems.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Orders_Detail",
+	"_Type": "Page"
+}

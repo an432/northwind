@@ -1,0 +1,10 @@
+{
+	"Service": "/nw/Services/srv.service",
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"OnSuccess": "/nw/Actions/Service/InitializeOnlineSuccessMessage.action",
+	"OnFailure": "/nw/Actions/Service/InitializeOnlineFailureMessage.action",
+	"ActionResult": {
+		"_Name": "init"
+	}
+}
